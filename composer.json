@@ -1,0 +1,36 @@
+{
+    "name": "danieldayton/headless-theme",
+    "description": "Headless Theme for WP Projects",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Daniel Dayton",
+            "email": "danieldayton33@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/wp-graphql/wp-graphql-tax-query.git"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/add-wpgraphql-seo":"*",
+        "wpackagist-plugin/wordpress-seo":"*",
+        "wpackagist-plugin/wp-mail-smtp":"*",
+        "wpackagist-plugin/wp-graphql":"*",
+        "wp-graphql/wp-graphql-acf":"*",
+        "wp-graphql/wp-graphql-tax-query": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "scripts": {}
+}
